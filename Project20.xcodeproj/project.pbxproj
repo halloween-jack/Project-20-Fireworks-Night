@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		550FD5161F9ECBB600E74B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550FD5151F9ECBB600E74B00 /* AppDelegate.swift */; };
 		550FD5181F9ECBB600E74B00 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 550FD5171F9ECBB600E74B00 /* GameScene.sks */; };
-		550FD51A1F9ECBB600E74B00 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 550FD5191F9ECBB600E74B00 /* Actions.sks */; };
 		550FD51C1F9ECBB600E74B00 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550FD51B1F9ECBB600E74B00 /* GameScene.swift */; };
 		550FD51E1F9ECBB600E74B00 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550FD51D1F9ECBB600E74B00 /* GameViewController.swift */; };
 		550FD5211F9ECBB600E74B00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550FD51F1F9ECBB600E74B00 /* Main.storyboard */; };
 		550FD5231F9ECBB600E74B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550FD5221F9ECBB600E74B00 /* Assets.xcassets */; };
 		550FD5261F9ECBB600E74B00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550FD5241F9ECBB600E74B00 /* LaunchScreen.storyboard */; };
 		550FD5311F9ECBB700E74B00 /* Project20Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550FD5301F9ECBB700E74B00 /* Project20Tests.swift */; };
+		550FD5431F9ECC4000E74B00 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 550FD53C1F9ECC4000E74B00 /* background.png */; };
+		550FD5441F9ECC4000E74B00 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 550FD53D1F9ECC4000E74B00 /* background@2x.png */; };
+		550FD5451F9ECC4000E74B00 /* explode.sks in Resources */ = {isa = PBXBuildFile; fileRef = 550FD53E1F9ECC4000E74B00 /* explode.sks */; };
+		550FD5461F9ECC4000E74B00 /* fuse.sks in Resources */ = {isa = PBXBuildFile; fileRef = 550FD53F1F9ECC4000E74B00 /* fuse.sks */; };
+		550FD5471F9ECC4000E74B00 /* rocket.png in Resources */ = {isa = PBXBuildFile; fileRef = 550FD5401F9ECC4000E74B00 /* rocket.png */; };
+		550FD5481F9ECC4000E74B00 /* rocket@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 550FD5411F9ECC4000E74B00 /* rocket@2x.png */; };
+		550FD5491F9ECC4000E74B00 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 550FD5421F9ECC4000E74B00 /* spark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +38,6 @@
 		550FD5121F9ECBB600E74B00 /* Project20.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project20.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		550FD5151F9ECBB600E74B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		550FD5171F9ECBB600E74B00 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		550FD5191F9ECBB600E74B00 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		550FD51B1F9ECBB600E74B00 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		550FD51D1F9ECBB600E74B00 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		550FD5201F9ECBB600E74B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +47,13 @@
 		550FD52C1F9ECBB700E74B00 /* Project20Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project20Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		550FD5301F9ECBB700E74B00 /* Project20Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project20Tests.swift; sourceTree = "<group>"; };
 		550FD5321F9ECBB700E74B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		550FD53C1F9ECC4000E74B00 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		550FD53D1F9ECC4000E74B00 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		550FD53E1F9ECC4000E74B00 /* explode.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explode.sks; sourceTree = "<group>"; };
+		550FD53F1F9ECC4000E74B00 /* fuse.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fuse.sks; sourceTree = "<group>"; };
+		550FD5401F9ECC4000E74B00 /* rocket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rocket.png; sourceTree = "<group>"; };
+		550FD5411F9ECC4000E74B00 /* rocket@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rocket@2x.png"; sourceTree = "<group>"; };
+		550FD5421F9ECC4000E74B00 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +97,8 @@
 			children = (
 				550FD5151F9ECBB600E74B00 /* AppDelegate.swift */,
 				550FD5171F9ECBB600E74B00 /* GameScene.sks */,
-				550FD5191F9ECBB600E74B00 /* Actions.sks */,
 				550FD51B1F9ECBB600E74B00 /* GameScene.swift */,
+				550FD53B1F9ECC4000E74B00 /* Content */,
 				550FD51D1F9ECBB600E74B00 /* GameViewController.swift */,
 				550FD51F1F9ECBB600E74B00 /* Main.storyboard */,
 				550FD5221F9ECBB600E74B00 /* Assets.xcassets */,
@@ -103,6 +115,20 @@
 				550FD5321F9ECBB700E74B00 /* Info.plist */,
 			);
 			path = Project20Tests;
+			sourceTree = "<group>";
+		};
+		550FD53B1F9ECC4000E74B00 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				550FD53C1F9ECC4000E74B00 /* background.png */,
+				550FD53D1F9ECC4000E74B00 /* background@2x.png */,
+				550FD53E1F9ECC4000E74B00 /* explode.sks */,
+				550FD53F1F9ECC4000E74B00 /* fuse.sks */,
+				550FD5401F9ECC4000E74B00 /* rocket.png */,
+				550FD5411F9ECC4000E74B00 /* rocket@2x.png */,
+				550FD5421F9ECC4000E74B00 /* spark.png */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,11 +214,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550FD5481F9ECC4000E74B00 /* rocket@2x.png in Resources */,
+				550FD5491F9ECC4000E74B00 /* spark.png in Resources */,
 				550FD5211F9ECBB600E74B00 /* Main.storyboard in Resources */,
+				550FD5471F9ECC4000E74B00 /* rocket.png in Resources */,
+				550FD5431F9ECC4000E74B00 /* background.png in Resources */,
+				550FD5461F9ECC4000E74B00 /* fuse.sks in Resources */,
 				550FD5181F9ECBB600E74B00 /* GameScene.sks in Resources */,
+				550FD5451F9ECC4000E74B00 /* explode.sks in Resources */,
+				550FD5441F9ECC4000E74B00 /* background@2x.png in Resources */,
 				550FD5231F9ECBB600E74B00 /* Assets.xcassets in Resources */,
 				550FD5261F9ECBB600E74B00 /* LaunchScreen.storyboard in Resources */,
-				550FD51A1F9ECBB600E74B00 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +403,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Project20;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -385,7 +417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Project20;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
