@@ -36,6 +36,23 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        checkTouches(touches)
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesMoved(touches, with: event)
+        checkTouches(touches)
+    }
+    
+    override func update(_ currentTime: TimeInterval) {
+        for (index, firework) in fireWorks.enumerated().reversed() {
+            if firework.position.y > 900 {
+                // this uses a position high above so that rockets can explode off screen
+                fireWorks.remove(at: index)
+                firework.removeFromParent()
+            }
+        }
     }
     
     @objc func launchFireworks() {
@@ -120,6 +137,31 @@ class GameScene: SKScene {
         // 7
         fireWorks.append(node)
         addChild(node)
+    }
+    
+    func checkTouches(_ touches: Set<UITouch>) {
+        guard let touch = touches.first else { return }
         
+        let location = touch.location(in: self)
+        let nodesAtPoint = nodes(at: location)
+        
+        for node in nodesAtPoint {
+            if node is SKSpriteNode {
+                let sprite = node as! SKSpriteNode
+                
+                if sprite.name == "firework" {
+                    for parent in fireWorks {
+                        let firework = parent.children[0] as! SKSpriteNode
+                        
+                        if firework.name == "selected" && firework.color != sprite.color {
+                            firework.name = "firework"
+                            firework.colorBlendFactor = 1
+                        }
+                    }
+                    sprite.name = "selected"
+                    sprite.colorBlendFactor = 0
+                }
+            }
+        }
     }
 }
