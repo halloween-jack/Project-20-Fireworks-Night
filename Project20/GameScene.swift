@@ -13,7 +13,7 @@ class GameScene: SKScene {
     
     // MARK: Properties
     var gameTimer: Timer!
-    var fireWorks = [SKNode]()
+    var fireworks = [SKNode]()
     
     let leftEdge = -22
     let bottomEdge = -22
@@ -46,10 +46,10 @@ class GameScene: SKScene {
     }
     
     override func update(_ currentTime: TimeInterval) {
-        for (index, firework) in fireWorks.enumerated().reversed() {
+        for (index, firework) in fireworks.enumerated().reversed() {
             if firework.position.y > 900 {
                 // this uses a position high above so that rockets can explode off screen
-                fireWorks.remove(at: index)
+                fireworks.remove(at: index)
                 firework.removeFromParent()
             }
         }
@@ -135,7 +135,7 @@ class GameScene: SKScene {
         node.addChild(emitter)
         
         // 7
-        fireWorks.append(node)
+        fireworks.append(node)
         addChild(node)
     }
     
@@ -150,7 +150,7 @@ class GameScene: SKScene {
                 let sprite = node as! SKSpriteNode
                 
                 if sprite.name == "firework" {
-                    for parent in fireWorks {
+                    for parent in fireworks {
                         let firework = parent.children[0] as! SKSpriteNode
                         
                         if firework.name == "selected" && firework.color != sprite.color {
@@ -176,13 +176,13 @@ class GameScene: SKScene {
     func explodeFireworks() {
         var numExploded = 0
         
-        for (index, fireworkContainer) in fireWorks.enumerated().reversed() {
+        for (index, fireworkContainer) in fireworks.enumerated().reversed() {
             let firework = fireworkContainer.children[0] as! SKSpriteNode
             
             if firework.name == "selected" {
                 // destroy this firewok!
                 explode(firework: fireworkContainer)
-                fireWorks.remove(at: index)
+                fireworks.remove(at: index)
                 numExploded += 1
             }
         }
